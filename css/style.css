@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+
+
+.searchbox input {
+    width: 91.5%;
+    border: 1px solid rgb(215, 215, 215);
+}
+
+
+.mic {
+    position: relative;
+    right: 20px;
+}
+
+.searchLeft .btn {
+    background-color: rgb(81, 81, 114);
+    color: white;
+    padding: 5px 0 3px 0;
+    font-size: 10px;
+    border-radius: 0;
+    margin-left: -20px;
+}
+
+menu a {
+    font-size: 14px;
+    padding: 3px;
+}
+
+
+.searchRight input {
+    border: 1px solid gray;
+}
+
+@media screen and (max-width:768px) {
+    .hearderSearch {
+        background-color: rgb(8, 8, 82);
+        margin-bottom: 15px;
+    }
+
+    .searchboxMeun {
+        color: white;
+        font-size: 30px;
+    }
+
+    .hearderSearch svg {
+        width: 80px;
+        position: relative;
+    }
+
+    .hearderSearch path {
+        fill: white;
+    }
+
+    .shopBag {
+        color: white;
+    }
+
+    .searchbox input {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .searchbox {
+        height: 5px;
+        position: relative;
+        bottom: 25px;
+    }
+
+    input::placeholder {
+        padding-left: 15px;
+    }
+
+    .mic {
+        display: none;
+    }
+
+    .searchLeft .btn {
+        display: none;
+    }
+
+    .searchIcon {
+        position: relative;
+        top: 20px;
+        left: 5px;
+    }
+}
+
+/* banner  */
+
+
+.banner-photo {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* Product */
+.img1 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: url(../img/ad1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: url(../img/ad2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: url(../img/ad3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.img4 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: url(../img/4.jpg) no-repeat;
+    background-size: cover;
+}
+
+.img5 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: url(../img/ad5.jpg) no-repeat;
+    background-size: cover;
+}
+
+.img6 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: url(../img/ad6.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+.product {
+    position: relative;
+}
+
+.icon--arrow-left {
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 3px black;
+    position: absolute;
+    top: 80px;
+    left: -5px;
+}
+
+.icon--arrow-right {
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 3px black;
+    position: absolute;
+    top: 80px;
+    right: -5px;
+}
+
+@media screen and (max-width:768px) {
+    .fs-xs {
+        font-size: 0.3rem;
+    }
+
+}
+
+
+
+/* AD */
+
+.saleAD {
+    position: relative;
+    border: 1px solid silver;
+}
+
+.sale {
+    width: 40%;
+    background-color: palevioletred;
+    color: white;
+    position: absolute;
+    left: -1px;
+    text-align: center;
+}
+
+.leftImg img {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.rightImg img {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.fs-7 {
+    font-size: xx-small;
+    color: rgb(127, 127, 127);
+}
+
+
+/* 周年慶廣告開始 */
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.outline {
+
+    width: 35%;
+    border-top: 1.5px solid #686868;
+}
+
+
+
+h5 {
+    font-size: 1rem;
+    color: rgb(78, 15, 134);
+}
+
+.boxContent .btn {
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(78, 15, 134);
+}
+
+.boxContent p {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgb(78, 15, 134);
+}
+
+
+.box {
+    text-align: center;
+    background-color: #f9dd94;
+    width: 23%;
+    border-radius: 10px;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+}
+
+.secBox {
+    background-color: #f9dd94;
+    border-radius: 10px
+}
+
+.secBox li {
+    text-align: center;
+}
+
+.secBoxList1 {
+    border-bottom: 1.5px solid #afafaf;
+    border-right: 1.5px solid #afafaf;
+}
+
+.secBoxList2 {
+    border-bottom: 1.5px solid #afafaf;
+    border-left: 1.5px solid #afafaf;
+    margin-left: -1.5px;
+}
+
+.secBoxList3 {
+    border-top: 1.5px solid #afafaf;
+    border-right: 1.5px solid #afafaf;
+    margin-top: -1.5px;
+}
+
+.secBox li {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9dd94;
+}
+
+.secBox li img {
+    width: 80px;
+    height: 80px;
+}
+
+@media screen and (max-width:768px) {
+    .box {
+        width: 48%;
+    }
+}
+
+
+/* 廣告產品開始 */
+
+.adContentHeader {
+    height: 50px;
+    background-color: rgb(189, 188, 255);
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    line-height: 16px;
+}
+
+.adContentHeader button {
+    padding: 3px;
+    color: rgb(75, 74, 165);
+    background-color: white;
+    border-radius: 50px;
+}
+
+.timebox p {
+    padding: 3px;
+    font-weight: bolder;
+}
+
+.timebox b {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.firstAdContent{
+    box-shadow: 1px 3px 3px rgb(75, 74, 165);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.firstAdContent ul {
+    padding: 10px;
+     
+}
+
+.firstAdContent li {
+    width: 30%;
+    margin:0 auto 10px auto;
+    text-align: center;
+}
+
+.firstAdContent img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.firstAdContent li p {
+    color: rgb(97, 94, 221);
+}
+
+
+.secAdContent ul {
+    padding: 20px;
+    box-shadow: 1px 3px 3px rgb(75, 74, 165);
+}
+
+.secAdContent li {
+    width: 47%;
+    margin: auto;
+    text-align: center;
+}
+
+.secAdContent img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .secAdContent li {
+        width: 24%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+
+
+
+/* wrap */
+
+.app {
+    width: 90%;
+    aspect-ratio: 1/1;
+    background: url(../img/app.jpg)center center/cover no-repeat;
+}
+
+.gift {
+    width: 90%;
+    aspect-ratio: 1/1;
+    background: url(../img/gift.jpg)center center/cover no-repeat;
+}
+
+.bg-gray {
+    background-color: rgb(218, 218, 218);
+}
+
+.btn-wrap {
+    background-color: rgb(81, 81, 114);
+    color: white;
+}
+
+/* sub */
+.items {
+
+    position: relative;
+}
+
+.wantphoto {
+    width: 100px;
+    aspect-ratio: 2/1;
+}
+
+
+.itemsright {
+
+    width: 50%;
+    flex-flow: row wrap;
+    position: relative;
+    left: 20px;
+}
+
+.itemsleft {
+    background-color: rgb(160, 232, 248);
+}
+
+@media screen and (min-width:1400px) {
+    .items {
+        position: none;
+    }
+
+    .itemsright {
+        width: 50%;
+        flex-flow: row wrap;
+        position: relative;
+        left: 80px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .items {
+        position: none;
+    }
+
+    .itemsright {
+        width: 50%;
+        flex-flow: row wrap;
+        position: relative;
+        left: 0;
+    }
+}
+
+
+/* value */
+
+.value1 {
+    width: 50%;
+    aspect-ratio: 2/1;
+    background: url(../img/1_v3.svg) center center/cover no-repeat;
+}
+
+.value2 {
+    width: 50%;
+    aspect-ratio: 2/1;
+    background: url(../img/2_v3.svg) center center/cover no-repeat;
+}
+
+.value3 {
+    width: 50%;
+    aspect-ratio: 2/1;
+    background: url(../img/3_v3.svg) center center/cover no-repeat;
+}
+
+/* footer */
+
+.w-button {
+    width: 20px;
+}
+
+.qrcode {
+    width: 10%;
+    aspect-ratio: 1/1;
+    background: url(/img/footer-qrcode.svg) center center/cover no-repeat;
+}
+
+.footerlogo {
+    width: 100px;
+    aspect-ratio: 16/4;
+    background: url(/img/pinkoi_logo_2019.svg) center center/cover no-repeat;
+}
