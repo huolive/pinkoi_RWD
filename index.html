@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pinkoi</title>
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="icon" href="./img/favicon_192x192.png" type="image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header class="container my-3">
+      <div class="row d-flex mt-5 hearderSearch">
+        <div class="col-4 d-md-none">
+          <div class="d-flex d-md-none searchboxMeun">≡</div>
+        </div>
+        <div class="col-md-2 col-4 d-flex  align-content-lg-center justify-content-center">
+          <svg height="48" viewBox="0 0 82 24" width="164" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M36.019 5.4a5.95 5.95 0 0 1 5.95 5.95v6.639c0 .258-.21.468-.469.468h-2.038a.469.469 0 0 1-.468-.468V11.35a2.975 2.975 0 0 0-5.95 0v6.639c0 .258-.21.468-.47.468h-2.037a.469.469 0 0 1-.468-.468V5.36c0-.309.292-.533.59-.453l2.037.546c.205.055.347.24.347.452v.297A5.917 5.917 0 0 1 36.02 5.4zm15.872 5.21l7.048 7.048c.295.295.086.8-.331.8h-2.689a.937.937 0 0 1-.662-.275l-5.355-5.355v5.16c0 .26-.21.47-.469.47h-2.038a.469.469 0 0 1-.468-.47V.469c0-.307.292-.532.59-.452l2.038.546c.205.055.347.24.347.453v7.377l3.213-3.213a.937.937 0 0 1 .662-.274h2.915c.334 0 .501.403.265.64zm15.814 5.258a4.104 4.104 0 1 0 0-8.209 4.104 4.104 0 0 0 0 8.21zm0-11.137a7.033 7.033 0 1 1 0 14.065 7.033 7.033 0 0 1 0-14.065zm-57.972.071a6.827 6.827 0 0 1 6.778 6.778c.027 3.783-3.165 6.877-6.948 6.877H7.92a.469.469 0 0 1-.469-.468V15.89c0-.259.21-.468.469-.468h1.68c2.086 0 3.846-1.649 3.878-3.735a3.793 3.793 0 0 0-3.852-3.851c-2.085.031-3.734 1.792-3.734 3.878v6.574a6.817 6.817 0 0 1-2.744 5.471.944.944 0 0 1-1.038.067L.176 22.71c-.26-.15-.226-.538.058-.634 1.522-.518 2.623-2.018 2.623-3.788V11.75c0-3.782 3.094-6.975 6.876-6.948zm14.534.652c.205.055.347.24.347.453v12.082c0 .258-.21.468-.468.468h-2.038a.469.469 0 0 1-.469-.468V5.36c0-.309.292-.533.59-.453zm57.351 0c.205.055.348.24.348.453v12.082c0 .258-.21.468-.469.468H79.46a.469.469 0 0 1-.468-.468V5.36c0-.309.292-.533.59-.453z"
+              fill="#003354" class="color"></path>
+          </svg>
+        </div>
+        <div class="searchLeft col-md-4 col-12 order-1 order-md-0 flex-grow-1 flex-md-grow-0 mt-3 mt-md-0">
+          <div class="searchbox">
+            <i class="fa-solid fa-magnifying-glass d-flex d-md-none searchIcon"></i>
+            <input type=" text" placeholder="搜尋好設計、體驗活動" />
+            <i class="fa-solid fa-microphone mic"></i>
+            <button class="btn">搜尋</button>
+          </div>
+          <menu class="d-none d-md-flex">
+            <a href=""> 環保杯</a>
+            <a href="">雨天救援</a>
+            <a href="">熱紅酒</a>
+            <a href="">2023年手帳</a>
+            <a href="">信用卡優惠</a>
+          </menu>
+        </div>
+        <div class="searchRight d-flex col-md-4 col-4 ms-auto align-items-center justify-content-end">
+          <a href="#" class="d-none d-md-flex mx-2">我想在Pinkoi上販售</a>
+          <input class="btn btn-sm me-2 d-none d-md-flex" type="submit" value="登入/註冊" />
+          <div>
+
+            <i class="fa-solid fa-cart-shopping shopBag"></i>
+            <i class="fa-solid fa-sack-dollar  shopBag"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-md-2">
+        <div class="row mx-auto justify-content-center">
+          <div class="col  d-md-flex p-0">
+            <a class="mx-auto" href="">配件飾品</a>
+          </div>
+          <div class="col  d-md-flex p-0">
+            <a class="mx-auto" href="">主題企劃</a>
+          </div>
+          <div class="col d-none d-md-flex p-0">
+            <a class="mx-auto" href="">包包提袋</a>
+          </div>
+          <div class="col d-none d-md-flex p-0">
+            <a class="mx-auto" href="">居家生活</a>
+          </div>
+          <div class="col d-none d-md-flex p-0">
+            <a class="mx-auto" href="">品味生活</a>
+          </div>
+          <div class="col  d-md-flex p-0">
+            <a class="mx-auto" href="">廚房餐桌</a>
+          </div>
+          <div class="col d-md-flex p-0">
+            <a class="mx-auto" href="">創意科技</a>
+          </div>
+          <div class="col  d-md-flex p-0">
+            <a class="mx-auto" href="">所有分類</a>
+          </div>
+          <div class="col  d-md-flex p-0">
+            <a class="mx-auto" href="">探索更多</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <img class="banner-photo " src="./img/banner1.png" alt="" />
+    </div>
+  </div>
+  <main>
+    <section>
+      <div class="container p-4">
+        <div class="d-flex w-100">
+          <h4>編輯嚴選</h4>
+          <span class="ms-auto fs-7">1/4</span>
+        </div>
+        <div class="row product flex-nowrap">
+          <svg width="14" height="14" viewBox="0 0 14 14" class="icon--arrow-left " xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 10.825L6.291 7 10 3.175 8.858 2 4 7l4.858 5L10 10.825z"></path>
+          </svg>
+          </svg>
+          <div class="col p-1 d-flex flex-column">
+            <div class="img1"></div>
+            <p class="fw-bold fs-xs flex-grow-1">Tolin雙層收納鞋凳</p>
+            <div class="d-flex flex-column">
+              <span class="text-muted mb-3 fs-md-6 fs-xs"><a href="#">idmix</a></span>
+              <span class="fs-xs">NT$1,380</span>
+            </div>
+          </div>
+
+          <div class="col p-1 d-flex flex-column">
+            <div class="img2"></div>
+            <p class="fw-bold fs-xs flex-grow-1">IDMIX N6 王朝系列暖手寶</p>
+            <div class="d-flex flex-column">
+              <span class="text-muted mb-3 fs-md-6 fs-xs"><a href="#">idmix</a></span>
+              <span class="fs-xs">NT$1,380</span>
+            </div>
+          </div>
+          <div class="col p-1 d-flex flex-column">
+            <div class="img3"></div>
+            <p class="fw-bold fs-xs flex-grow-1">
+              【 組合活動 】茶韻山韻雙罐擴香組合
+            </p>
+            <div class="d-flex flex-column">
+              <span class="text-muted mb-3 fs-md-6 fs-xs"><a href="#">idmix</a></span>
+              <span class="fs-xs">NT$1,380</span>
+            </div>
+          </div>
+          <div class="col p-1 d-flex flex-column">
+            <div class="img4"></div>
+            <p class="fw-bold fs-xs flex-grow-1">片花 - 霧面 PET 紙膠帶</p>
+            <div class="d-flex flex-column">
+              <span class="text-muted mb-3 fs-md-6 fs-xs"><a href="#">idmix</a></span>
+              <span class="fs-xs">NT$1,380</span>
+            </div>
+          </div>
+          <div class="col p-1 d-flex flex-column">
+            <div class="img5"></div>
+            <p class="fw-bold fs-xs flex-grow-1">
+              四季花繪2套組-自帶離紙PET膠帶
+            </p>
+            <div class="d-flex flex-column">
+              <span class="text-muted mb-3 fs-md-6 fs-xs"><a href="#">idmix</a></span>
+              <span class="fs-xs">NT$1,380</span>
+            </div>
+          </div>
+          <div class="col p-1 d-flex flex-column">
+            <div class="img6"></div>
+            <p class="fw-bold fs-xs flex-grow-1">
+              2023 Cafe and Hof Calendar Poster
+            </p>
+            <div class="d-flex flex-column">
+              <span class="text-muted mb-3 fs-md-6 fs-xs"><a href="#">idmix</a></span>
+              <span class="fs-xs">NT$1,380</span>
+            </div>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 14 14" class="icon--arrow-right" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 10.825L7.709 7 4 3.175 5.142 2 10 7l-4.858 5L4 10.825z"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container p-3 mb-3">
+        <div class="d-flex w-100">
+          <h4>品牌推廣</h4>
+          <span class="ms-auto fs-7">1/4</span>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 p-2">
+            <div class="saleAD">
+              <p class="sale">品牌活動進行中</p>
+              <div class="row d-flex w-100 g-0">
+                <div class="leftImg col-8 p-0">
+                  <img src="img/3.jpg" alt="" />
+                </div>
+                <div class="rightImg col-4 p-0">
+                  <img src="img/3-1.jpg" alt="" />
+                  <img src="img/3-2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="d-flex align-items-center px-2">
+                <img style="width: 25%" src="img/150x150.jpg" alt="" />
+                <div>
+                  <p class="fs-7 m-1">NORM_Patisserie</p>
+                  <p class="fs-7 m-1">
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="m-brand-info__icon icon--star_outlined"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.32097 11.8911C2.42352 11.9641 2.54659 12.0025 2.6724 12.0009C2.90215 12.0009 3.11236 11.8877 3.20698 11.8367L3.21412 11.8329L6.00155 10.2986L8.78812 11.8329L8.79156 11.8347C8.93125 11.9103 9.3404 12.1317 9.68126 11.8903C10.0335 11.6417 9.95469 11.1574 9.92469 10.9749L9.39155 7.72114L11.6493 5.41457C11.7633 5.29886 12.1087 4.94571 11.969 4.53086C11.879 4.25914 11.6253 4.09029 11.2155 4.02771L8.09898 3.55371L6.70269 0.594857C6.6264 0.432 6.42326 0 6.00155 0C5.58046 0 5.37644 0.430715 5.29903 0.594128L5.29869 0.594857L3.90412 3.55286L0.786689 4.02771C0.376975 4.09029 0.123261 4.26 0.0324035 4.53171C-0.106208 4.94669 0.237753 5.29847 0.351515 5.41481L0.352118 5.41543L2.61069 7.72029L2.07755 10.9749L2.07714 10.9774C2.05014 11.1445 1.96963 11.643 2.32097 11.8911ZM9.06069 11.004L6.00155 9.32057L2.94155 11.004L3.52612 7.43057L1.00955 4.86086L4.48355 4.332L6.00069 1.11514L7.51783 4.332L10.9927 4.86086L8.47526 7.42971L9.06069 11.004Z">
+                      </path>
+                    </svg>
+                    評價 5.0
+                  </p>
+                  <p class="fs-7 m-1">
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="m-brand-info__icon icon--user_sm"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.0274 6.40286C7.83819 6.40286 9.31198 4.97214 9.31198 3.20057C9.31198 1.43099 7.83759 0 6.0274 0C4.21734 0 2.74369 1.43087 2.74369 3.20057C2.74369 4.97226 4.21674 6.40286 6.0274 6.40286ZM6.0274 0.857143C7.36984 0.857143 8.45483 1.9102 8.45483 3.20057C8.45483 4.49297 7.3704 5.54571 6.0274 5.54571C4.68461 5.54571 3.60083 4.49317 3.60083 3.20057C3.60083 1.91 4.68517 0.857143 6.0274 0.857143ZM11.4557 11.5715C11.4557 11.8082 11.2638 12.0001 11.0271 12.0001H1.02855C0.791854 12.0001 0.599976 11.8082 0.599976 11.5715C0.599976 9.17827 2.12564 7.40151 4.41855 7.40151H7.48198C9.79756 7.40151 11.4557 9.21176 11.4557 11.5715ZM10.5761 11.1429H1.47675C1.63691 9.4275 2.76482 8.25866 4.41855 8.25866H7.48198C9.16664 8.25866 10.3973 9.46113 10.5761 11.1429Z"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                    關注人數999
+                  </p>
+                </div>
+                <div class="ms-auto">
+                  <button class="btn btn-sm btn-light btn-outline-dark">
+                    即刻探索
+                  </button>
+                  <button class="btn btn-sm btn-light btn-outline-dark">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <div class="saleAD">
+              <p class="sale">品牌活動進行中</p>
+              <div class="row d-flex w-100 g-0">
+                <div class="leftImg col-8 p-0">
+                  <img src="img/3.jpg" alt="" />
+                </div>
+                <div class="rightImg col-4 p-0">
+                  <img src="img/3-1.jpg" alt="" />
+                  <img src="img/3-2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="d-flex align-items-center px-2">
+                <img style="width: 25%" src="img/150x150.jpg" alt="" />
+                <div>
+                  <p class="fs-7 m-1">NORM_Patisserie</p>
+                  <p class="fs-7 m-1">
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="m-brand-info__icon icon--star_outlined"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.32097 11.8911C2.42352 11.9641 2.54659 12.0025 2.6724 12.0009C2.90215 12.0009 3.11236 11.8877 3.20698 11.8367L3.21412 11.8329L6.00155 10.2986L8.78812 11.8329L8.79156 11.8347C8.93125 11.9103 9.3404 12.1317 9.68126 11.8903C10.0335 11.6417 9.95469 11.1574 9.92469 10.9749L9.39155 7.72114L11.6493 5.41457C11.7633 5.29886 12.1087 4.94571 11.969 4.53086C11.879 4.25914 11.6253 4.09029 11.2155 4.02771L8.09898 3.55371L6.70269 0.594857C6.6264 0.432 6.42326 0 6.00155 0C5.58046 0 5.37644 0.430715 5.29903 0.594128L5.29869 0.594857L3.90412 3.55286L0.786689 4.02771C0.376975 4.09029 0.123261 4.26 0.0324035 4.53171C-0.106208 4.94669 0.237753 5.29847 0.351515 5.41481L0.352118 5.41543L2.61069 7.72029L2.07755 10.9749L2.07714 10.9774C2.05014 11.1445 1.96963 11.643 2.32097 11.8911ZM9.06069 11.004L6.00155 9.32057L2.94155 11.004L3.52612 7.43057L1.00955 4.86086L4.48355 4.332L6.00069 1.11514L7.51783 4.332L10.9927 4.86086L8.47526 7.42971L9.06069 11.004Z">
+                      </path>
+                    </svg>
+                    評價 5.0
+                  </p>
+                  <p class="fs-7 m-1">
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="m-brand-info__icon icon--user_sm"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.0274 6.40286C7.83819 6.40286 9.31198 4.97214 9.31198 3.20057C9.31198 1.43099 7.83759 0 6.0274 0C4.21734 0 2.74369 1.43087 2.74369 3.20057C2.74369 4.97226 4.21674 6.40286 6.0274 6.40286ZM6.0274 0.857143C7.36984 0.857143 8.45483 1.9102 8.45483 3.20057C8.45483 4.49297 7.3704 5.54571 6.0274 5.54571C4.68461 5.54571 3.60083 4.49317 3.60083 3.20057C3.60083 1.91 4.68517 0.857143 6.0274 0.857143ZM11.4557 11.5715C11.4557 11.8082 11.2638 12.0001 11.0271 12.0001H1.02855C0.791854 12.0001 0.599976 11.8082 0.599976 11.5715C0.599976 9.17827 2.12564 7.40151 4.41855 7.40151H7.48198C9.79756 7.40151 11.4557 9.21176 11.4557 11.5715ZM10.5761 11.1429H1.47675C1.63691 9.4275 2.76482 8.25866 4.41855 8.25866H7.48198C9.16664 8.25866 10.3973 9.46113 10.5761 11.1429Z"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                    關注人數999
+                  </p>
+                </div>
+                <div class="ms-auto">
+                  <button class="btn btn-sm btn-light btn-outline-dark">
+                    即刻探索
+                  </button>
+                  <button class="btn btn-sm btn-light btn-outline-dark">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-2">
+            <div class="saleAD">
+              <p class="sale">品牌活動進行中</p>
+              <div class="row d-flex w-100 g-0">
+                <div class="leftImg col-8 p-0">
+                  <img src="img/3.jpg" alt="" />
+                </div>
+                <div class="rightImg col-4 p-0">
+                  <img src="img/3-1.jpg" alt="" />
+                  <img src="img/3-2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="d-flex align-items-center px-2">
+                <img style="width: 25%" src="img/150x150.jpg" alt="" />
+                <div>
+                  <p class="fs-7 m-1">NORM_Patisserie</p>
+                  <p class="fs-7 m-1">
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="m-brand-info__icon icon--star_outlined"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.32097 11.8911C2.42352 11.9641 2.54659 12.0025 2.6724 12.0009C2.90215 12.0009 3.11236 11.8877 3.20698 11.8367L3.21412 11.8329L6.00155 10.2986L8.78812 11.8329L8.79156 11.8347C8.93125 11.9103 9.3404 12.1317 9.68126 11.8903C10.0335 11.6417 9.95469 11.1574 9.92469 10.9749L9.39155 7.72114L11.6493 5.41457C11.7633 5.29886 12.1087 4.94571 11.969 4.53086C11.879 4.25914 11.6253 4.09029 11.2155 4.02771L8.09898 3.55371L6.70269 0.594857C6.6264 0.432 6.42326 0 6.00155 0C5.58046 0 5.37644 0.430715 5.29903 0.594128L5.29869 0.594857L3.90412 3.55286L0.786689 4.02771C0.376975 4.09029 0.123261 4.26 0.0324035 4.53171C-0.106208 4.94669 0.237753 5.29847 0.351515 5.41481L0.352118 5.41543L2.61069 7.72029L2.07755 10.9749L2.07714 10.9774C2.05014 11.1445 1.96963 11.643 2.32097 11.8911ZM9.06069 11.004L6.00155 9.32057L2.94155 11.004L3.52612 7.43057L1.00955 4.86086L4.48355 4.332L6.00069 1.11514L7.51783 4.332L10.9927 4.86086L8.47526 7.42971L9.06069 11.004Z">
+                      </path>
+                    </svg>
+                    評價 5.0
+                  </p>
+                  <p class="fs-7 m-1">
+                    <svg width="12" height="12" viewBox="0 0 12 12" class="m-brand-info__icon icon--user_sm"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.0274 6.40286C7.83819 6.40286 9.31198 4.97214 9.31198 3.20057C9.31198 1.43099 7.83759 0 6.0274 0C4.21734 0 2.74369 1.43087 2.74369 3.20057C2.74369 4.97226 4.21674 6.40286 6.0274 6.40286ZM6.0274 0.857143C7.36984 0.857143 8.45483 1.9102 8.45483 3.20057C8.45483 4.49297 7.3704 5.54571 6.0274 5.54571C4.68461 5.54571 3.60083 4.49317 3.60083 3.20057C3.60083 1.91 4.68517 0.857143 6.0274 0.857143ZM11.4557 11.5715C11.4557 11.8082 11.2638 12.0001 11.0271 12.0001H1.02855C0.791854 12.0001 0.599976 11.8082 0.599976 11.5715C0.599976 9.17827 2.12564 7.40151 4.41855 7.40151H7.48198C9.79756 7.40151 11.4557 9.21176 11.4557 11.5715ZM10.5761 11.1429H1.47675C1.63691 9.4275 2.76482 8.25866 4.41855 8.25866H7.48198C9.16664 8.25866 10.3973 9.46113 10.5761 11.1429Z"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                    關注人數999
+                  </p>
+                </div>
+                <div class="ms-auto">
+                  <button class="btn btn-sm btn-light btn-outline-dark">
+                    即刻探索
+                  </button>
+                  <button class="btn btn-sm btn-light btn-outline-dark">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid my-3 d-flex justify-content-center align-items-center ">
+        <div class="outline d-inline"></div>
+        <h2 class="px-5 ">年終狂歡祭超級強檔</h2>
+        <div class="outline"></div>
+      </div>
+      <div class=" container-fluid  boxContent d-md-flex ">
+        <ul class=" row w-100 m-auto p-0">
+          <li class="p-3 col">
+            <div class="box py-3 w-100 ">
+              <img src="./img/annAD_1.png" alt="">
+              <h5 class="fw-bolder">3c達人</h5>
+              <p>最高回饋</p>
+              <button class="btn">GO</button>
+            </div>
+          </li>
+          <li class="p-3 col">
+            <div class="box py-3 w-100 ">
+              <img src="./img/annAD_2.png" alt="">
+              <h5 class="fw-bolder">3c達人</h5>
+              <p>最高回饋</p>
+              <button class="btn">GO</button>
+            </div>
+          </li>
+          <li class="p-3 col">
+            <div class="box py-3 w-100 ">
+              <img src="./img/annAD_3.png" alt="">
+              <h5 class="fw-bolder">3c達人</h5>
+              <p>最高回饋</p>
+              <button class="btn">GO</button>
+            </div>
+          </li>
+          <li class="p-3 col">
+            <div class="box py-3 w-100 ">
+              <img src="./img/annAD_4.png" alt="">
+              <h5 class="fw-bolder">3c達人</h5>
+              <p>最高回饋</p>
+              <button class="btn">GO</button>
+            </div>
+          </li>
+          <li class="p-3 col">
+            <div class="box py-3 w-100 ">
+              <img src="./img/annAD_5.png" alt="">
+              <h5 class="fw-bolder">3c達人</h5>
+              <p>最高回饋</p>
+              <button class="btn">GO</button>
+            </div>
+          </li>
+        </ul>
+        <div class="p-3  w-100">
+          <ul class="secBox row m-0 p-3">
+            <li class="secBoxList1 col-6 py-1">
+              <div>
+                <h5 class="fw-bolder">3c達人</h5>
+                <p>最高回饋</p>
+                <button class="btn">GO</button>
+              </div>
+              <img src="./img/annAD_6.png" alt="">
+            </li>
+            <li class="secBoxList2 col-6 py-1">
+              <div>
+                <h5 class="fw-bolder">3c達人</h5>
+                <p>最高回饋</p>
+                <button class="btn">GO</button>
+              </div>
+              <img src="./img/annAD_7.png" alt="">
+            </li>
+            <li class="secBoxList3 col-6 py-1">
+              <div>
+                <h5 class="fw-bolder">3c達人</h5>
+                <p>最高回饋</p>
+                <button class="btn">GO</button>
+              </div>
+              <img src="./img/annAD_8.png" alt="">
+            </li>
+            <li class="col-6 py-1">
+              <div>
+                <h5 class="fw-bolder">3c達人</h5>
+                <p>最高回饋</p>
+                <button class="btn">GO</button>
+              </div>
+              <img src="./img/annAD_9.png" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container ">
+      <div class="p-5 row">
+        <div class="  col-12 col-md-6 px-3 mb-3">
+        <div class="firstAdContent h-100 mb-2">
+          <div class="adContentHeader d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-bolt "></i>
+              <p class="m-0">限時搶購</p>
+            </div>
+            <span class="timebox d-flex align-items-center ">
+              <p class="m-0">倒數</p>
+              <b>00</b><span>:</span>
+              <b>00</b><span>:</span>
+              <b>00</b>
+            </span>
+            <div class="d-none d-md-flex">
+              <button class="btn btn-sm">16:00場</button>
+              <button class="btn btn-sm">22:00場</button>
+              <button class="btn btn-sm">24:00場</button>
+            </div>
+          </div>
+          <div>
+            <ul class="d-flex flex-wrap justify-content-center ">
+              <li>
+                <img src="./img/j.jpg" alt="">
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+                </img>
+              </li>
+              <li>
+                <img src="./img/b.jpg" alt=""></img>
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+              </li>
+              <li>
+                <img src="./img/33.jpg" alt=""> </img>
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+              </li>
+              <li>
+                <img src="./img/4.jpg" alt=""></img>
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+              </li>
+              <li>
+                <img src="./img/5.jpg" alt=""> </img>
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+              </li>
+              <li>
+                <img src="./img/6.jpg" alt=""></img>
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class=" col-12 col-md-6 px-3">
+          <div class="secAdContent h-100">
+          <div class="adContentHeader d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-bolt "></i>
+              <p class="m-0">限時搶購</p>
+            </div>
+            <span class="timebox d-flex align-items-center ">
+              <p class="m-0">倒數</p>
+              <b>00</b><span>:</span>
+              <b>00</b><span>:</span>
+              <b>00</b>
+            </span>
+          </div>
+          <div>
+            <ul class="d-flex flex-wrap justify-content-center ">
+              <li>
+                <img src="./img/j.jpg" alt="">
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+                </img>
+              </li>
+              <li>
+                <img src="./img/b.jpg" alt=""></img>
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+              </li>
+              <li>
+                <img src="./img/33.jpg" alt=""> </img>
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+              </li>
+              <li>
+                <img src="./img/4.jpg" alt=""></img>
+                <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                <div class="d-flex justify-content-center">
+                  <p>32折</p>
+                  <p>$711</p>
+                </div>
+              </li>
+            </ul>
+            <div>
+            <div class=" adContentHeader d-flex">
+              <i class="fa-regular fa-star"></i>
+              <p class="fs-1 fw-bolder">發燒主題</p>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div>
+              <ul class="d-flex flex-wrap justify-content-center ">
+                <li>
+                  <img src="./img/j.jpg" alt="">
+                  <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                  </img>
+                </li>
+                <li>
+                  <img src="./img/b.jpg" alt=""></img>
+                  <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                </li>
+                <li>
+                  <img src="./img/b.jpg" alt=""></img>
+                  <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                </li>
+                <li>
+                  <img src="./img/b.jpg" alt=""></img>
+                  <h6>【CROSSFOR】日本授權純銀跳舞項鍊(多款選)</h6>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid bg-gray">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto d-flex bg-white p-4 m-3">
+              <div class="w-25">
+                <div class="app "></div>
+              </div>
+              <div class="px-3 w-75">
+                <p class="fs-6 fw-bold">\ APP 限定/ 成為 Pinkoi 會員即享免運優惠</p>
+                <p>72 小時之內下載 Pinkoi APP，即可免費拿 250 P Coins</p>
+                <button class="btn btn-wrap">下載 APP 享優惠</button>
+              </div>
+            </div>
+            <div class="col-auto d-flex bg-white p-4 m-3">
+              <div class="w-25">
+                <div class="gift "></div>
+              </div>
+              <div class="px-3 w-75">
+                <p class="fs-6 fw-bold">\ APP 限定/ 成為 Pinkoi 會員即享免運優惠</p>
+                <p>72 小時之內下載 Pinkoi APP，即可免費拿 250 P Coins</p>
+                <button class="btn btn-wrap">下載 APP 享優惠</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section>
+      <div class="container py-5">
+        <div class="row d-flex items">
+          <div class="col-auto col-md m-auto ">
+            <div class=" w-75 d-flex flex-column m-auto ">
+              <h3 class="border-bottom border-3 py-3 mb-4">訂閱 Pinkoi 設計誌</h3>
+              <p>留下 Email，隨時掌握最新消息！</p>
+              <input type="email" placeholder="email">
+              <button class="btn btn-light rounded-0 my-3">立即訂閱</button>
+              <p>*訂閱即代表你同意我們的使用者條款和隱私權保護政策</p>
+            </div>
+          </div>
+          <div class="col-auto col-md  d-flex align-items-center">
+            <div class="itemsright d-flex ">
+              <img class="wantphoto" src="./img/wanted_tw_1.jpg" alt="">
+              <img class="wantphoto" src="/img/wanted_tw_2.jpg" alt="">
+              <img class="wantphoto" src="/img/wanted_tw_3.jpg" alt="">
+              <img class="wantphoto" src="/img/wanted_tw_4.jpg" alt="">
+            </div>
+            <div class="itemsleft p-5 ">
+              <h4 class="fw-bold">歡迎以下熱門趨勢商品開館！</h4>
+              <p>生鮮食品、居家美食料理
+                在地小農種植農產品、居家即食料理、調味醬料等 <br>
+                數位創作
+                插畫、平面設計<br>
+                運動戶外
+                露營、運動、戶外活動用具<br>
+                科技家電
+                3C 用品、小家電</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid bg-gray p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12 text-center p-4 ">
+              <div class="value1 m-auto"></div>
+              <p class="fw-bold fs-6">集結全球好設計</p>
+              <p>販售超過百萬件獨特商品，透過好設計實現心中的理想生活！</p>
+            </div>
+            <div class="col-md-4 col-12 text-center p-4 ">
+              <div class="value2 m-auto"></div>
+              <p class="fw-bold fs-6">集結全球好設計</p>
+              <p>販售超過百萬件獨特商品，透過好設計實現心中的理想生活！</p>
+            </div>
+            <div class="col-md-4 col-12 text-center p-4 ">
+              <div class="value3 m-auto"></div>
+              <p class="fw-bold fs-6">集結全球好設計</p>
+              <p>販售超過百萬件獨特商品，透過好設計實現心中的理想生活！</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <div class="container-fluid bg-gray mt-5 p-3 d-none">
+        <div class="container">
+          <div class="row  d-md-flex">
+            <div class="col">
+              <p class="fs-4 fw-bold">探索好設計</p>
+              <p><a href="#">所有商品分類</a></p>
+              <p><a href="#">設計誌</a></p>
+              <p><a href="#">跨館合併結帳專區</a></p>
+              <p><a href="#">Pinkoi 禮物卡</a></p>
+              <p><a href="#">Pinkoi 群眾募資</a></p>
+              <p><a href="#">找靈感</a></p>
+              <p><a href="#">逛櫥窗</a></p>
+            </div>
+            <div class="col">
+              <p class="fs-4 fw-bold">販售</p>
+              <p><a href="#">我想在 Pinkoi 上販售</a></p>
+              <p><a href="#">我想提案群眾募資專案</a></p>
+              <p><a href="#">設計館問與答</a></p>
+            </div>
+            <div class="col">
+              <p class="fs-4 fw-bold">幫助 / 政策</p>
+              <p><a href="#">問與答</a></p>
+              <p><a href="#">大宗採購</a></p>
+              <p><a href="#">訊息公告</a></p>
+              <p><a href="#">服務條款</a></p>
+              <p><a href="#">退貨政策</a></p>
+              <p><a href="#">會員制度 & P Coins 回饋計畫</a></p>
+            </div>
+            <div class="col">
+              <p class="fs-4 fw-bold">幫助 / 政策</p>
+              <p><a href="#">問與答</a></p>
+              <p><a href="#">大宗採購</a></p>
+              <p><a href="#">訊息公告</a></p>
+              <p><a href="#">服務條款</a></p>
+              <p><a href="#">退貨政策</a></p>
+              <p><a href="#">會員制度 & P Coins 回饋計畫</a></p>
+            </div>
+            <div class="col">
+              <p class="fs-4 fw-bold">追蹤 Pinkoi</p>
+              <div class="d-flex mb-5">
+                <p class="me-3"><a href="#"><span class="g-footer-icon"><svg width="40" height="40" viewBox="0 0 40 40"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#66666A"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M20.0625 12C17.771 12 17.4837 12.0097 16.5837 12.0508C15.6857 12.0917 15.0723 12.2344 14.5356 12.443C13.9808 12.6586 13.5102 12.9471 13.0411 13.4161C12.5721 13.8852 12.2836 14.3558 12.068 14.9106C11.8594 15.4473 11.7167 16.0607 11.6758 16.9587C11.6347 17.8587 11.625 18.146 11.625 20.4375C11.625 22.729 11.6347 23.0163 11.6758 23.9163C11.7167 24.8143 11.8594 25.4277 12.068 25.9644C12.2836 26.5192 12.5721 26.9898 13.0411 27.4589C13.5102 27.9279 13.9808 28.2164 14.5356 28.4321C15.0723 28.6406 15.6857 28.7833 16.5837 28.8242C17.4837 28.8653 17.771 28.875 20.0625 28.875C22.354 28.875 22.6413 28.8653 23.5413 28.8242C24.4393 28.7833 25.0527 28.6406 25.5894 28.4321C26.1442 28.2164 26.6148 27.9279 27.0839 27.4589C27.5529 26.9898 27.8414 26.5192 28.0571 25.9644C28.2656 25.4277 28.4083 24.8143 28.4492 23.9163C28.4903 23.0163 28.5 22.729 28.5 20.4375C28.5 18.146 28.4903 17.8587 28.4492 16.9587C28.4083 16.0607 28.2656 15.4473 28.0571 14.9106C27.8414 14.3558 27.5529 13.8852 27.0839 13.4161C26.6148 12.9471 26.1442 12.6586 25.5894 12.443C25.0527 12.2344 24.4393 12.0917 23.5413 12.0508C22.6413 12.0097 22.354 12 20.0625 12ZM20.0625 13.5203C22.3154 13.5203 22.5823 13.5289 23.472 13.5695C24.2946 13.607 24.7414 13.7444 25.0387 13.86C25.4325 14.013 25.7136 14.1959 26.0088 14.4912C26.3041 14.7864 26.487 15.0675 26.64 15.4613C26.7556 15.7586 26.893 16.2054 26.9305 17.028C26.9711 17.9177 26.9797 18.1846 26.9797 20.4375C26.9797 22.6904 26.9711 22.9573 26.9305 23.847C26.893 24.6696 26.7556 25.1164 26.64 25.4137C26.487 25.8075 26.3041 26.0886 26.0088 26.3838C25.7136 26.6791 25.4325 26.862 25.0387 27.015C24.7414 27.1306 24.2946 27.268 23.472 27.3055C22.5824 27.3461 22.3156 27.3547 20.0625 27.3547C17.8094 27.3547 17.5426 27.3461 16.653 27.3055C15.8304 27.268 15.3836 27.1306 15.0863 27.015C14.6925 26.862 14.4114 26.6791 14.1162 26.3838C13.8209 26.0886 13.638 25.8075 13.485 25.4137C13.3694 25.1164 13.232 24.6696 13.1945 23.847C13.1539 22.9573 13.1453 22.6904 13.1453 20.4375C13.1453 18.1846 13.1539 17.9177 13.1945 17.028C13.232 16.2054 13.3694 15.7586 13.485 15.4613C13.638 15.0675 13.8209 14.7864 14.1162 14.4912C14.4114 14.1959 14.6925 14.013 15.0863 13.86C15.3836 13.7444 15.8304 13.607 16.653 13.5695C17.5427 13.5289 17.8096 13.5203 20.0625 13.5203ZM20.0625 16.1047C17.6696 16.1047 15.7297 18.0446 15.7297 20.4375C15.7297 22.8304 17.6696 24.7703 20.0625 24.7703C22.4554 24.7703 24.3953 22.8304 24.3953 20.4375C24.3953 18.0446 22.4554 16.1047 20.0625 16.1047ZM20.0625 23.25C18.5092 23.25 17.25 21.9908 17.25 20.4375C17.25 18.8842 18.5092 17.625 20.0625 17.625C21.6158 17.625 22.875 18.8842 22.875 20.4375C22.875 21.9908 21.6158 23.25 20.0625 23.25ZM25.579 15.9336C25.579 15.3744 25.1256 14.921 24.5664 14.921C24.0073 14.921 23.554 15.3744 23.554 15.9336C23.554 16.4927 24.0073 16.946 24.5664 16.946C25.1256 16.946 25.579 16.4927 25.579 15.9336Z"
+                          fill="white"></path>
+                      </svg></span></a></p>
+                <p class="me-3"><a href="#"><span class="g-footer-icon"><svg width="40" height="40" viewBox="0 0 40 40"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#66666A"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M29 19.0263C29 15.152 24.9625 12 20 12C15.0377 12 11 15.152 11 19.0263C11 22.4994 14.2019 25.4086 18.527 25.9589C18.8199 26.0196 19.2188 26.1451 19.3198 26.386C19.4106 26.6047 19.3793 26.9474 19.3488 27.1685C19.3488 27.1685 19.2436 27.7796 19.2204 27.91C19.1814 28.1288 19.0395 28.7659 20 28.3767C20.9608 27.9874 25.1828 25.4404 27.071 23.3494H27.0706C28.375 21.9736 29 20.577 29 19.0263ZM14.4146 21.1339C14.1861 21.1339 14 20.9408 14 20.703V17.4397C14 17.2022 14.2116 17.0089 14.48 17.0089C14.7484 17.0089 14.9 17.2006 14.9 17.4397V20.2724H15.9854C16.2143 20.2724 16.4 20.4657 16.4 20.703C16.4 20.9408 16.2143 21.1339 15.9854 21.1339H14.4146ZM18.2 20.703C18.2 20.9408 17.9981 21.1339 17.7501 21.1339C17.5019 21.1339 17.3 20.9408 17.3 20.703V17.4397C17.3 17.2022 17.5019 17.0089 17.7501 17.0089C17.9981 17.0089 18.2 17.2022 18.2 17.4397V20.703ZM22.7 20.703C22.7 20.889 22.5717 21.0532 22.3797 21.1116C22.3316 21.1265 22.2813 21.1339 22.2309 21.1339C22.0849 21.1339 21.9449 21.0696 21.8566 20.9616L20.0372 18.6842V20.703C20.0372 20.9408 19.8272 21.1339 19.5687 21.1339C19.3103 21.1339 19.1 20.9408 19.1 20.703V17.4397C19.1 17.2541 19.2288 17.0899 19.4203 17.0312C19.4686 17.0162 19.5187 17.0089 19.5691 17.0089C19.7153 17.0089 19.8554 17.0731 19.9431 17.1812L21.7631 19.4587V17.4397C21.7631 17.2022 21.9735 17.0089 22.2316 17.0089C22.4902 17.0089 22.7 17.2022 22.7 17.4397V20.703ZM25.5853 18.6407C25.8142 18.6407 26 18.8339 26 19.0715C26 19.3088 25.8142 19.502 25.5853 19.502H24.4294V20.2724H25.5853C25.8138 20.2724 26 20.4657 26 20.703C26 20.9408 25.8138 21.1339 25.5853 21.1339H24.0145C23.7863 21.1339 23.6 20.9408 23.6 20.703V19.0726V19.0715V17.4397C23.6 17.2022 23.7859 17.0089 24.0145 17.0089H25.5853C25.8142 17.0089 26 17.2022 26 17.4397C26 17.6772 25.8142 17.8702 25.5853 17.8702H24.4294V18.6407H25.5853Z"
+                          fill="white"></path>
+                      </svg></span></a></p>
+                <p class="me-3"><a href="#"><span class="g-footer-icon"><svg width="40" height="40" viewBox="0 0 40 40"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#66666A"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M21.5983 20.9736H24.1413L24.5219 18.0404H21.5983V16.1677C21.5983 15.3184 21.8357 14.7397 23.0615 14.7397L24.625 14.739V12.1156C24.3545 12.0799 23.4265 12 22.3467 12C20.0926 12 18.5494 13.3669 18.5494 15.8773V18.0404H16V20.9736H18.5494V28.5H21.5983V20.9736Z"
+                          fill="white"></path>
+                      </svg></span></a></p>
+                <p class="me-3"><a href="#"><span class="g-footer-icon"><svg width="40" height="40" viewBox="0 0 40 40"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#66666A"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.9977 22.7593V17.1533L23.1587 19.8974L17.9977 22.7593ZM29.556 16.0202C29.556 16.0202 29.3659 14.6485 28.783 14.0445C28.0436 13.2517 27.2148 13.2477 26.8347 13.2013C24.1137 13 20.0321 13 20.0321 13H20.0237C20.0237 13 15.9422 13 13.2211 13.2013C12.841 13.2477 12.0125 13.2517 11.2728 14.0445C10.6898 14.6485 10.5001 16.0202 10.5001 16.0202C10.5001 16.0202 10.3057 17.631 10.3057 19.2418V20.7519C10.3057 22.3627 10.5001 23.9735 10.5001 23.9735C10.5001 23.9735 10.6898 25.3452 11.2728 25.9492C12.0125 26.742 12.9841 26.717 13.4168 26.8C14.9724 26.9527 20.0279 27 20.0279 27C20.0279 27 24.1137 26.9937 26.8347 26.7924C27.2148 26.746 28.0436 26.742 28.783 25.9492C29.3659 25.3452 29.556 23.9735 29.556 23.9735C29.556 23.9735 29.7501 22.3627 29.7501 20.7519V19.2418C29.7501 17.631 29.556 16.0202 29.556 16.0202Z"
+                          fill="white"></path>
+                      </svg></span></a></p>
+                <p class="me-3"><a href="#"><span class="g-footer-icon"><svg width="40" height="40" viewBox="0 0 40 40"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#66666A"></circle>
+                        <g clip-path="url(#clip0_11_5785)">
+                          <path
+                            d="M16.9772 28.2188C24.1453 28.2188 28.067 22.2787 28.067 17.1291C28.067 16.9621 28.0633 16.7914 28.0558 16.6244C28.8187 16.0727 29.4771 15.3893 30 14.6064C29.2895 14.9225 28.5351 15.1289 27.7627 15.2187C28.576 14.7311 29.185 13.9653 29.4768 13.063C28.7116 13.5164 27.8748 13.8363 27.0023 14.0089C26.4144 13.3842 25.6371 12.9706 24.7906 12.832C23.9441 12.6935 23.0754 12.8376 22.319 13.2422C21.5626 13.6467 20.9606 14.2892 20.606 15.0703C20.2513 15.8514 20.1639 16.7275 20.3571 17.5632C18.8078 17.4855 17.2921 17.083 15.9083 16.3819C14.5245 15.6808 13.3035 14.6967 12.3244 13.4935C11.8268 14.3514 11.6745 15.3666 11.8986 16.3328C12.1226 17.299 12.7061 18.1437 13.5305 18.6951C12.9116 18.6754 12.3062 18.5088 11.7645 18.2089V18.2572C11.7639 19.1575 12.0752 20.0303 12.6453 20.7271C13.2155 21.4239 14.0094 21.9018 14.892 22.0795C14.3187 22.2363 13.717 22.2592 13.1334 22.1463C13.3825 22.9206 13.8671 23.5978 14.5196 24.0834C15.1721 24.5691 15.9599 24.8389 16.7731 24.8552C15.3925 25.9397 13.6871 26.5279 11.9314 26.5252C11.6201 26.5247 11.3091 26.5056 11 26.468C12.7835 27.6122 14.8582 28.2199 16.9772 28.2188Z"
+                            fill="white"></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_11_5785">
+                            <rect width="19" height="19" fill="white" transform="translate(11 11)"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg></span></a></p>
+                <p class="me-3"><a href="#"><span class="g-footer-icon"><svg width="40" height="40" viewBox="0 0 40 40"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#66666A"></circle>
+                        <path
+                          d="M24.5157 10H21.3136V22.942C21.3136 24.4841 20.0821 25.7507 18.5495 25.7507C17.0169 25.7507 15.7853 24.4841 15.7853 22.942C15.7853 21.4276 16.9895 20.1884 18.4674 20.1333V16.8841C15.2106 16.9391 12.5833 19.6101 12.5833 22.942C12.5833 26.3015 15.2653 29 18.5768 29C21.8883 29 24.5704 26.2739 24.5704 22.942V16.3058C25.7746 17.187 27.2524 17.7101 28.8124 17.7377V14.4884C26.4041 14.4058 24.5157 12.4232 24.5157 10Z"
+                          fill="white"></path>
+                      </svg></span></a></p>
+              </div>
+              <div>
+                <p class="fs-4 fw-bold">隨時掌握最新好設計</p>
+                <div class="d-flex">
+                  <button class="btn d-flex align-items-center bg-light btn-outline-dark">
+                    <img class="w-button p-1" src="./img/pinkoi_logo_2019.svg" alt="">
+                    下載 Pinkoi APP
+                  </button>
+                  <div class="qrcode ms-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid bg-gray p-3">
+        <div class="container  border-top  border-light p-3 d-flex">
+          <div class="row p-3 w-100  justify-content-between">
+            <div class="col-auto d-flex  align-items-center mb-3 mb-md-0">
+              <div class=" footerlogo me-3"></div>
+              <p class="m-0">Design the way you are.</p>
+
+            </div>
+            <div class="col-auto d-flex">
+              <div class="d-flex ms-auto">
+                <p class="me-md-4">食品業者登錄字號：A-153674659-00000-3 <br>
+                  © 2022 Pinkoi. All Rights Reserved.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path class="color" fill="#29242D"
+                    d="M14.6885 17.9102c.394-.716.715-1.583.94-2.561h1.931c-.676 1.118-1.675 2.015-2.871 2.561zm-8.248-2.561h1.931c.225.978.546 1.845.94 2.561-1.196-.546-2.195-1.443-2.871-2.561zm2.871-9.26c-.394.717-.715 1.584-.94 2.561h-1.931c.676-1.117 1.675-2.014 2.871-2.561zm2.689-.589c.67 0 1.573 1.182 2.089 3.15h-4.179c.516-1.968 1.419-3.15 2.09-3.15zm-6.5 6.5c0-.571.081-1.122.22-1.651h2.365c-.055.534-.085 1.084-.085 1.651 0 .566.03 1.117.085 1.65h-2.365c-.139-.528-.22-1.079-.22-1.65zm4.096 1.65c-.059-.519-.096-1.068-.096-1.65 0-.582.037-1.131.096-1.651h4.807c.059.52.097 1.069.097 1.651 0 .582-.038 1.131-.097 1.65h-4.807zm2.404 4.85c-.671 0-1.574-1.184-2.09-3.151h4.179c-.516 1.967-1.419 3.151-2.089 3.151zm6.5-6.5c0 .571-.082 1.122-.221 1.65h-2.365c.055-.533.086-1.084.086-1.65 0-.567-.031-1.117-.086-1.651h2.365c.139.529.221 1.08.221 1.651zm-.941-3.35h-1.931c-.225-.977-.546-1.844-.94-2.561 1.196.547 2.195 1.444 2.871 2.561zm-5.559-4.65c-4.418 0-8 3.582-8 8s3.582 8 8 8c4.417 0 8-3.582 8-8s-3.583-8-8-8z">
+                  </path>
+                </svg>
+                <span class="fs-xs">繁體中文（台灣）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
